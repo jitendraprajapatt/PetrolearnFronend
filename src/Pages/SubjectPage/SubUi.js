@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Subject.css';
-import { LOCAL_ADDRESS } from '../../Key';
+import { LOCAL_ADDRESS ,BASE_ADDRESS } from '../../Key';
 import axios from 'axios'
 const ReuseBox = ({SID , sName}) => {
     const [loading, setLoading] = useState(false);
@@ -101,7 +101,7 @@ const handleSubmit = (event) => {
     try{
         event.preventDefault();
 
-        const url = LOCAL_ADDRESS + "/api/subject/topics/newPost";
+        const url = BASE_ADDRESS + "/api/subject/topics/newPost";
         const res =  axios.post(
             url,
            topicDataArr ,
