@@ -23,7 +23,7 @@ const UserRegistrationAndLogin = () => {
     const handleOnLogin = async (e) => {
         e.preventDefault();
     
-        const url = LOCAL_ADDRESS + "/auth/user/login";
+        const url = BASE_ADDRESS + "/auth/user/login";
     
         try {
             const response = await axios.post(url, userLogin, {
