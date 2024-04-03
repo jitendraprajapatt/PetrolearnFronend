@@ -10,7 +10,7 @@ const Study = ({ setPath, subName }) => {
     const [subjects, setSubject] = useState([]);
 
     function FetchSubject() {
-        const url = LOCAL_ADDRESS + "/api/study/get/subject";
+        const url =BASE_ADDRESS + "/api/study/get/subject";
         fetch(url)
             .then(Response => {
                 return Response.json();
