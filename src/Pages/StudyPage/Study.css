@@ -1,0 +1,149 @@
+.main-study-box {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.link, a {
+    text-decoration: none;
+    color: gray;
+}
+
+.main-study-box h1 {
+    text-align: center;
+}
+
+.main-study-box .Icon-box {
+    width: 100%;
+    height: 100%;
+}
+
+.main-study-box .Icon-box .upper-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-study-box .Icon-box .upper-box .box {
+    display: grid;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 12px 24px rgba(2, 30, 84, .1);
+}
+
+.main-study-box .Icon-box .box i {
+    font-size: 30px;
+}
+
+.main-study-box .center-box {
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.main-study-box .center-box .card-box {
+   max-width: 200px;
+    padding: 5px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 12px 24px rgba(8, 61, 183, 0.1);
+    transition: 0.4s;
+}
+
+.main-study-box .center-box .card-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 6px 0px rgb(123, 122, 122);
+}
+
+
+
+.main-study-box .center-box .card-box .sub-box img {
+    border-radius: 5px;
+    max-width: 100%;
+    
+    object-fit: cover;
+}
+
+
+.overlay-box {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(7, 7, 7, 0.249);
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay-box:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay-box .box {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-box .box .box-1 {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 0px gray;
+    background-color: rgb(255, 255, 255);
+}
+
+.overlay-box .box .box-1 a {
+    float: right;
+}
+
+.overlay-box .box .box-1 .input-box {
+    margin: 10px 0;
+}
+
+.overlay-box .box .box-1 input {
+    width: 300px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 12px 24px rgba(2, 30, 84, .1);
+}
+
+.overlay-box .box .box-1 .input-box .btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.overlay-box .box .box-1 .input-box .btn:hover {
+    background-color: rgba(24, 155, 24, 0.747);
+}
