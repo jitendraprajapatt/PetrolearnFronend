@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Subject.css";
-import { LOCAL_ADDRESS } from '../../Key';
+import { BASE_ADDRESS } from '../../Key';
 import ReuseBox from './SubUi';
 
 const Subject = ({ subject }) => {
@@ -16,14 +16,14 @@ const Subject = ({ subject }) => {
     });
 
     const fetchHeadings = async () => {
-        const url = LOCAL_ADDRESS + "/api/subject/heading/List";
+        const url = BASE_ADDRESS + "/api/subject/heading/List";
         const res = await fetch(url);
         const data = await res.json();
         setHeadings(data);
     };
 
     const fetchTopics = async () => {
-        const url = LOCAL_ADDRESS + "/api/subject/heading/List/topics";
+        const url = BASE_ADDRESS + "/api/subject/heading/List/topics";
         const res = await fetch(url);
         const data = await res.json();
         setTopics(data);
