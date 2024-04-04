@@ -2,7 +2,7 @@ import { useState } from "react"
 
 import './RegisterAndLogin.css'
 import axios from 'axios'
-import { LOCAL_ADDRESS } from "../Key";
+import {BASE_ADDRESS} from "../Key";
 
 
 
