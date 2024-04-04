@@ -138,7 +138,7 @@ const Create = () => {
         try{
             event.preventDefault();
 
-            const url = LOCAL_ADDRESS + "/api/study/add/subject";
+            const url = BASE_ADDRESS + "/api/study/add/subject";
             const res =  axios.post(
                 url,
                formData ,
@@ -229,7 +229,7 @@ const Delete = () => {
         try{
             event.preventDefault();
 
-            const url = LOCAL_ADDRESS + "/api/study/delete/subject";
+            const url = BASE_ADDRESS + "/api/study/delete/subject";
             const res =  axios.post(
                 url,
                formData ,
