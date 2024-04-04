@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, json } from "react-router-dom";
-import { LOCAL_ADDRESS } from '../../Key';
+import { BASE_ADDRESS } from '../../Key';
 import verifyUserToken from '../../Auth/Service';
 import './Study.css'
 import axios from 'axios'
