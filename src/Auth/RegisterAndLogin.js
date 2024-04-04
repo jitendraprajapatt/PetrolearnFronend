@@ -153,7 +153,7 @@ const Registration = () => {
 
         e.preventDefault();
 
-        const url = LOCAL_ADDRESS + "/auth/user/registration";
+        const url = BASE_ADDRESS + "/auth/user/registration";
 
         const response = await axios.post(url, createUser, {
             headers: {
